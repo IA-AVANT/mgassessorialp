@@ -172,6 +172,12 @@ const faqs = [
   },
 ];
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
 const ghlSurveyUrls = {
   organic: 'https://funil.mgassessoriadigital.com/survey',
   traffic: 'https://funil.mgassessoriadigital.com/survey-388238',
@@ -724,6 +730,7 @@ function Contact() {
   function openSurvey() {
     setSurveyVersion(Date.now());
     setIsSurveyOpen(true);
+    window.fbq?.('track', 'Lead', { content_name: 'Diagnostico MG Digital' });
   }
 
   useEffect(() => {
@@ -796,7 +803,6 @@ function Contact() {
                   title="Formulário MG Digital"
                   loading="eager"
                   referrerPolicy="strict-origin-when-cross-origin"
-                  scrolling="no"
                 />
               </div>
             </div>

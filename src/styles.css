@@ -1851,7 +1851,6 @@ a {
   border: 0;
   border-radius: 6px;
   background: #ffffff;
-  overflow: hidden;
   scrollbar-width: none;
 }
 
@@ -2217,12 +2216,13 @@ a {
   }
 
   .ghl-survey-shell {
-    min-height: 1288px;
+    min-height: 1640px;
     padding: 8px;
+    overflow: visible;
   }
 
   .ghl-survey-frame {
-    height: 1272px;
+    height: 1620px;
   }
 }
 
