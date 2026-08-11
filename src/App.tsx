@@ -179,8 +179,8 @@ declare global {
 }
 
 const ghlSurveyUrls = {
-  organic: 'https://funil.mgassessoriadigital.com/survey',
-  traffic: 'https://funil.mgassessoriadigital.com/survey-388238',
+  organic: 'https://funil.mgassessoriadigital.com/organico?utm_source=site&utm_campaign=mg-assessoria',
+  traffic: 'https://funil.mgassessoriadigital.com/trafego?utm_source=site&utm_campaign=mg-assessoria',
 };
 
 function getActiveSurveyUrl() {
